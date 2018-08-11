@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/rlItem"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" >
+    android:layout_height="wrap_content">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        app:cardElevation="10dp"
-        app:cardCornerRadius="5dp">
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -22,15 +21,15 @@
                 android:id="@+id/ivFlag"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:layout_margin="5dp"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp" />
 
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toEndOf="@id/ivFlag"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="10dp">
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/ivFlag">
 
                 <TextView
                     android:id="@+id/tvCountry"
@@ -39,16 +38,16 @@
                     android:layout_margin="5dp"
                     android:text="Country"
                     android:textSize="35sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/tvPopulation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/tvCountry"
                     android:layout_margin="5dp"
                     android:text="Population"
-                    android:textSize="25sp"
-                    android:layout_below="@id/tvCountry"/>
+                    android:textSize="25sp" />
 
             </RelativeLayout>
 
@@ -56,9 +55,7 @@
         </RelativeLayout>
 
 
-
     </android.support.v7.widget.CardView>
-
 
 
 </RelativeLayout>
